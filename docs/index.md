@@ -3,23 +3,26 @@
 layout: home
 
 hero:
-  name: "My Personal Blog"
-  text: "Pinocao's Blog"
-  tagline: My great project tagline
+  name: "Pinocao"
+  text: "前端学习笔记"
+  tagline: 一起加油！
+  image:
+    src: /avatar.png
+    alt: Pinocao
   actions:
     - theme: brand
-      text: Markdown Examples
+      text: start Control CV
       link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - icon: 🧩
+    title: 前端之路
+    details: 自 2018 年大二开始接触前端，2020年开始前端实习
+  - icon: 🎯
+    title: 目前现状
+    details: 目前就职于Tencent（base：深圳）-- TEG-前端开发岗位
+  - icon: ⛽️
+    title: 未来规划
+    details: 沉淀技术，积累经验，升职加薪
 ---
 
