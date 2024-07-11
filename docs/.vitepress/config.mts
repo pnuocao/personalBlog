@@ -1,5 +1,5 @@
 import { defineConfig } from "vitepress";
-import { sidebar } from "./configs";
+import { markdown, sidebar } from "./configs";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -7,7 +7,22 @@ export default defineConfig({
   description: "Pinocao's Blog",
   head: [
     ["link", { rel: "icon", href: "/avatar.png" }], //浏览器的标签栏的网页图标
+    // markdown扩展插件使用的css
+    [
+      "link",
+      {
+        rel: "stylesheet",
+        href: "https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css",
+      },
+    ],
+    [
+      "script",
+      {
+        src: "https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js",
+      },
+    ],
   ],
+  markdown,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: "/avatar.png",
