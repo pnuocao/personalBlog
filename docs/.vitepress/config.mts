@@ -26,16 +26,41 @@ export default defineConfig({
       prev: "上一篇",
       next: "下一篇",
     },
-    nav: [{ text: "首页", link: "/" }],
-    sidebar: [
+    nav: [
+      { text: "首页", link: "/" },
       {
-        text: "Examples",
+        text: "前端面试合集",
         items: [
-          { text: "Markdown Examples", link: "/markdown-examples" },
-          { text: "Runtime API Examples", link: "/api-examples" },
+          {
+            text: "代码手写",
+            link: "/pages/write-by-Hand/debounce.md",
+          },
         ],
       },
     ],
+    // sidebar: [
+    //   {
+    //     text: "Examples",
+    //     items: [
+    //       { text: "Markdown Examples", link: "/markdown-examples" },
+    //       { text: "Runtime API Examples", link: "/api-examples" },
+    //     ],
+    //   },
+    //   {
+    //     text: "222",
+    //     items: [
+    //       { text: "Markdown Examples", link: "/pages/writeByHand/debounce" },
+    //     ],
+    //   },
+    // ],
+    sidebar: {
+      "/pages/writeByHand/": [
+        {
+          text: "手写系列", // 必要的
+          items: [{ link: "/pages/writeByHand/index.md", text: "手写题" }],
+        },
+      ],
+    },
     socialLinks: [
       { icon: "github", link: "https://github.com/pnuocao/personalBlog" },
     ],
