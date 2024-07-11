@@ -1,4 +1,5 @@
 import { defineConfig } from "vitepress";
+import { sidebar } from "./configs";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -32,35 +33,13 @@ export default defineConfig({
         text: "前端面试合集",
         items: [
           {
-            text: "代码手写",
+            text: "JS手写",
             link: "/pages/write-by-Hand/debounce.md",
           },
         ],
       },
     ],
-    // sidebar: [
-    //   {
-    //     text: "Examples",
-    //     items: [
-    //       { text: "Markdown Examples", link: "/markdown-examples" },
-    //       { text: "Runtime API Examples", link: "/api-examples" },
-    //     ],
-    //   },
-    //   {
-    //     text: "222",
-    //     items: [
-    //       { text: "Markdown Examples", link: "/pages/writeByHand/debounce" },
-    //     ],
-    //   },
-    // ],
-    sidebar: {
-      "/pages/writeByHand/": [
-        {
-          text: "手写系列", // 必要的
-          items: [{ link: "/pages/writeByHand/index.md", text: "手写题" }],
-        },
-      ],
-    },
+    sidebar,
     socialLinks: [
       { icon: "github", link: "https://github.com/pnuocao/personalBlog" },
     ],
