@@ -61,7 +61,7 @@ const throttle = (fn, delay) => {
       pre = Date.now();
       fn.apply(this, args);
     } else if (!timer) {
-      // 保证最后一次会执行，无需操作pre时间
+      // 保证最后一次会执行，无需操作pre
       timer = setTimeout(() => {
         fn.apply(this, args);
       }, fn);
@@ -71,11 +71,53 @@ const throttle = (fn, delay) => {
 ```
 
 - v4.0 版本
-  - 支持第一次和最后一次是否执行的参数配置
+  - 支持第一次和最后一次是否执行的参数配置 leading：false 表示禁用第一次执行 trailing: false 表示禁用停止触发的回调, 不能同时为 false
   - 支持取消
 
 ```js
-const throttle = (fn, delay) => {
-  // todo
+const throttle = (fn, delay, options = {}) => {
+  let timer = null;
+  let pre = 0;
+  let context, args;
+
+  const later = function () {
+    pre = options.leading === false ? 0 : Date.now();
+    timer = null;
+    fn.apply(context, args);
+    context = args = null;
+  };
+
+  const throttled = function () {
+    const now = Date.now();
+    // leading为false的话第一次不执行
+    if (!pre && options.leading === false) pre = now;
+    context = this;
+    args = arguments;
+    const remaining = delay - (now - pre);
+
+    if (remaining <= 0) {
+      // 清除中间过程中可能增加的定时器
+      if (timer) {
+        clearTimeout(timer);
+        timer = null;
+      }
+      pre = now;
+      fn.apply(context, args);
+      context = args = null;
+      // trailing 设置计时器执行最后一次
+    } else if (!timer && options.trailing !== false) {
+      timer = setTimeout(later, remaining);
+    }
+  };
+
+  throttled.cancel = function () {
+    clearTimeout(timer);
+    pre = 0;
+    timer = null;
+  };
+
+  return throttled;
 };
 ```
+
+> [学习文章](https://github.com/mqyqingfeng/Blog/issues/26)
