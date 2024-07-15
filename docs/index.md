@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: Let's Go！
-      link: /markdown-examples
+      link: /pages/write-by-hand/debounce
 
 features:
   - icon: 🧩
