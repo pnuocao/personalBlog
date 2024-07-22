@@ -49,7 +49,7 @@ export default defineConfig({
         items: [
           {
             text: "JS手写",
-            link: "/pages/write-by-Hand/debounce.md",
+            link: "/pages/write-by-hand/debounce.md",
           },
         ],
       },
