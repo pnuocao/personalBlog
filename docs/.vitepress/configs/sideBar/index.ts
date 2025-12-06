@@ -24,6 +24,7 @@ export const sidebar = {
           items: [
             { link: "/pages/css/import-and-priority", text: "CSS引入方式与优先级" },
             { link: "/pages/css/selectors", text: "CSS选择器与优先级" },
+            { link: "/pages/css/inherited-properties", text: "CSS继承属性" },
           ],
         },
       ],
