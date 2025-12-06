@@ -30,6 +30,13 @@ export const sidebar = {
             { link: "/pages/css/units", text: "CSS单位详解" },
           ],
         },
+        {
+          text: "CSS盒模型",
+          collapsed: false,
+          items: [
+            { link: "/pages/css/box-model", text: "CSS 盒模型" },
+          ],
+        },
       ],
     },
   ],
