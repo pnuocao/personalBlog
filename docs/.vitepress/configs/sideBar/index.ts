@@ -26,6 +26,7 @@ export const sidebar = {
             { link: "/pages/css/selectors", text: "CSS选择器与优先级" },
             { link: "/pages/css/inherited-properties", text: "CSS继承属性" },
             { link: "/pages/css/display", text: "display 属性与元素隐藏" },
+            { link: "/pages/css/pseudo", text: "伪类与伪元素" },
           ],
         },
       ],
