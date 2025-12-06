@@ -35,6 +35,7 @@ export const sidebar = {
           collapsed: false,
           items: [
             { link: "/pages/css/box-model", text: "CSS 盒模型" },
+            { link: "/pages/css/margin-collapse", text: "Margin 塌陷问题" },
           ],
         },
       ],
