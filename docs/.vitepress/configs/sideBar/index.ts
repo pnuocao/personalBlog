@@ -13,4 +13,19 @@ export const sidebar = {
       ],
     },
   ],
+  // 面试合集--CSS专题
+  "/pages/css/": [
+    {
+      text: "CSS专题",
+      items: [
+        {
+          text: "CSS基础",
+          collapsed: false,
+          items: [
+            { link: "/pages/css/import-and-priority", text: "CSS引入方式与优先级" },
+          ],
+        },
+      ],
+    },
+  ],
 };

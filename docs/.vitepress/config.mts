@@ -52,6 +52,10 @@ export default defineConfig({
             text: "JS手写",
             link: "/pages/write-by-Hand/debounce",
           },
+          {
+            text: "CSS专题",
+            link: "/pages/css/import-and-priority",
+          },
         ],
       },
     ],

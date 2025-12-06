@@ -62,8 +62,8 @@ npm run docs:build
    
    上传示例（使用 scp）：
    ```bash
-   scp -r docs/.vitepress/dist/* username@server:/data/pinocao/vite-press-blog/
-   scp -r packages/client/dist/* root@43.138.157.200:/data/pinocao/student-system/client/dist/
+
+   scp -r docs/.vitepress/dist/* root@43.138.157.200:/data/pinocao/vite-press-blog/
    ```
    
    **注意**：仅上传 `dist` 下的文件内容，不包含 `dist` 目录本身，使用户文件直接结构在 `/data/pinocao/vite-press-blog` 下
