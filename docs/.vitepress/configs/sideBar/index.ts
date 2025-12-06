@@ -27,6 +27,7 @@ export const sidebar = {
             { link: "/pages/css/inherited-properties", text: "CSS继承属性" },
             { link: "/pages/css/display", text: "display 属性与元素隐藏" },
             { link: "/pages/css/pseudo", text: "伪类与伪元素" },
+            { link: "/pages/css/units", text: "CSS单位详解" },
           ],
         },
       ],
