@@ -5,6 +5,7 @@ import { markdown, sidebar } from "./configs";
 export default defineConfig({
   title: "Pinocao",
   description: "Pinocao's Blog",
+  cleanUrls: true,
   head: [
     ["link", { rel: "icon", href: "/home.png" }], //浏览器的标签栏的网页图标
     // markdown扩展插件使用的css
@@ -49,7 +50,7 @@ export default defineConfig({
         items: [
           {
             text: "JS手写",
-            link: "/pages/write-by-hand/debounce.md",
+            link: "/pages/write-by-Hand/debounce",
           },
         ],
       },
