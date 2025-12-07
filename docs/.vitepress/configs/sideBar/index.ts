@@ -48,6 +48,13 @@ export const sidebar = {
             { link: "/pages/css/flex-one", text: "flex:1 完全指南" },
           ],
         },
+        {
+          text: "性能优化",
+          collapsed: false,
+          items: [
+            { link: "/pages/css/reflow-repaint", text: "减少重排和重绘" },
+          ],
+        },
       ],
     },
   ],
