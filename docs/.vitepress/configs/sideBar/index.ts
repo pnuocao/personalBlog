@@ -45,6 +45,7 @@ export const sidebar = {
           collapsed: false,
           items: [
             { link: "/pages/css/flex-layout", text: "Flex 布局原理与实践" },
+            { link: "/pages/css/flex-one", text: "flex:1 完全指南" },
           ],
         },
       ],
