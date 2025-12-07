@@ -40,6 +40,13 @@ export const sidebar = {
             { link: "/pages/css/clear-float", text: "清除浮动" },
           ],
         },
+        {
+          text: "Flex 布局",
+          collapsed: false,
+          items: [
+            { link: "/pages/css/flex-layout", text: "Flex 布局原理与实践" },
+          ],
+        },
       ],
     },
   ],
