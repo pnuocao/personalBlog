@@ -54,6 +54,7 @@ export const sidebar = {
           items: [
             { link: "/pages/css/reflow-repaint", text: "减少重排和重绘" },
             { link: "/pages/css/critical-css", text: "关键 CSS（Critical CSS）" },
+            { link: "/pages/css/animation-performance", text: "CSS 动画性能优化" },
           ],
         },
       ],
