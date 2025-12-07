@@ -37,6 +37,7 @@ export const sidebar = {
             { link: "/pages/css/box-model", text: "CSS 盒模型" },
             { link: "/pages/css/margin-collapse", text: "Margin 塌陷问题" },
             { link: "/pages/css/percentage", text: "百分比计算" },
+            { link: "/pages/css/clear-float", text: "清除浮动" },
           ],
         },
       ],
