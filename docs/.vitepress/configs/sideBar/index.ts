@@ -63,4 +63,24 @@ export const sidebar = {
       ],
     },
   ],
+  // 面试合集--Webpack专题
+  "/pages/webpack/": [
+    {
+      text: "Webpack专题",
+      items: [
+        {
+          text: "基础菜单",
+          collapsed: false,
+          items: [
+            { link: "/pages/webpack/core-concepts", text: "核心概念、构建流程与打包原理" },
+            { link: "/pages/webpack/chunk-bundle-module", text: "Chunk、Bundle、Module 的区别" },
+            { link: "/pages/webpack/vs-grunt-gulp", text: "Webpack 与 Grunt、Gulp 的区别" },
+            { link: "/pages/webpack/vs-vite-rollup", text: "Webpack 与 Vite、Rollup 的区别" },
+            { link: "/pages/webpack/hmr", text: "模块热替换（HMR）原理与实现" },
+            { link: "/pages/webpack/webpack-dev-server", text: "webpack-dev-server 的作用与原理" },
+          ],
+        },
+      ],
+    },
+  ],
 };

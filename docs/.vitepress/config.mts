@@ -56,6 +56,10 @@ export default defineConfig({
             text: "CSS专题",
             link: "/pages/css/import-and-priority",
           },
+          {
+            text: "Webpack",
+            link: "/pages/webpack/core-concepts",
+          },
         ],
       },
     ],
