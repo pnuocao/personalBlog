@@ -41,6 +41,16 @@ export const sidebar = {
           ],
         },
         {
+          text: "定位",
+          collapsed: false,
+          items: [
+            { link: "/pages/css/position-values", text: "position 定位值详解" },
+            { link: "/pages/css/position-sticky", text: "sticky 定位的原理和使用场景" },
+            { link: "/pages/css/stacking-context", text: "层叠上下文详解" },
+            { link: "/pages/css/absolute-percentage", text: "绝对定位与非绝对定位的百分比计算" },
+          ],
+        },
+        {
           text: "Flex 布局",
           collapsed: false,
           items: [
