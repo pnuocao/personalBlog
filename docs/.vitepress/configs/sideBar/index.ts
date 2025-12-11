@@ -59,6 +59,15 @@ export const sidebar = {
           ],
         },
         {
+          text: "预处理",
+          collapsed: false,
+          items: [
+            { link: "/pages/css/preprocessors", text: "CSS预处理器有哪些？Sass、Less的区别" },
+            { link: "/pages/css/css-modules", text: "CSS模块化的方案" },
+            { link: "/pages/css/postcss", text: "PostCSS的作用" },
+          ],
+        },
+        {
           text: "性能优化",
           collapsed: false,
           items: [
